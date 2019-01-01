@@ -15,8 +15,9 @@ public class BrowserFactory {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);//dynamic wait. max time allowed for page to load.
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);//dynamic wait. max wait time, system will
+		//wait for web-element to appear on page
 		
 		driver.get("https://www.google.com");
 		
