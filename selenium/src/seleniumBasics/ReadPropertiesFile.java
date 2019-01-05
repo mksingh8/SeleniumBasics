@@ -22,7 +22,7 @@ public class ReadPropertiesFile {
 
 		prop.load(ip);
 
-		//Remove all the hard-coded values, and get it from the config file
+		// Remove all the hard-coded values, and get it from the config file
 		String url = prop.getProperty("url");
 		String browseName = prop.getProperty("browser");
 		Long pageLoad = Long.parseLong((prop.getProperty("pageLoadTime")));
@@ -49,10 +49,10 @@ public class ReadPropertiesFile {
 		}
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		
+
 		driver.manage().timeouts().pageLoadTimeout(pageLoad, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(implictlyWait, TimeUnit.SECONDS);
-		
+
 		driver.get(url);
 		System.out.println(driver.getTitle());
 		driver.quit();
@@ -60,19 +60,3 @@ public class ReadPropertiesFile {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
