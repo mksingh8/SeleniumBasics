@@ -23,21 +23,24 @@ public class FindElementsConcept {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		driver.get("https://www.google.com");
-		//all the links have input tag as "a"
+		// all the links have input tag as "a", will return a list of WebElements
 		List<WebElement> inputList = driver.findElements(By.tagName("a"));
-		System.out.println("No of input fields: " + inputList.size());
-		
-		//to print the content of the List use, for loop 
-		for (int i = 0; i < inputList.size(); i++) {
-			/*
-			 * Iterator<WebElement> itr = inputList.iterator(); WebElement we = itr.next();
-			 * System.out.println(we.getText());
-			 */
-			String inputText = inputList.get(i).getText();
-			System.out.println(inputText);
+		System.out.println("No of tags fields: " + inputList.size());// know the number of links
 
+		// to print the content of the List use, for loop with Iterator or without
+		// Iterator
+
+		Iterator<WebElement> itr = inputList.iterator();
+		for (int i = 0; i < inputList.size(); i++) {
+			WebElement we = itr.next();
+			System.out.println(we.getAttribute("text"));
 		}
-		System.out.println(inputList.size());
+
+		// OR use this simple method.
+		/*
+		 * for (int i = 0; i < inputList.size(); i++) { String inputText =
+		 * inputList.get(i).getText(); System.out.println(inputText); }
+		 */
 		driver.quit();
 
 	}
