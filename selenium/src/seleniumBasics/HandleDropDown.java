@@ -15,7 +15,7 @@ public class HandleDropDown {
 		
 		driver.get("https://www.ultimateqa.com/simple-html-elements-for-automation/");
 		
-		//use Select class to handle dropdown box. Create the object of Select class by passing the  
+		//use Select class to handle drop-down box. Create the object of Select class by passing the web-element 
 		Select select = new Select(driver.findElement(By.xpath("//select")));
 		select.selectByVisibleText("Saab");
 		select.selectByIndex(0);
