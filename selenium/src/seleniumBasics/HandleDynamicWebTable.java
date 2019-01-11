@@ -84,7 +84,7 @@ public class HandleDynamicWebTable {
 		String after_xpath = "]/td[2]/a";
 
 		// implement array-list to count the occurrence of unique strings
-		List<String> conList = new ArrayList<String>();
+		List<String> conListArray = new ArrayList<String>();
 		Set<String> uniqueCon = null;
 
 		for (int i = 4; i < 25; i++) {
@@ -96,12 +96,12 @@ public class HandleDynamicWebTable {
 				e.printStackTrace();
 			}
 			// contactList = Arrays.asList(contactlist.getText());
-			conList.add(contactname.getText());//to add the contact name one by one to the Array List
+			conListArray.add(contactname.getText());//to add the contact name one by one to the Array List
 		}
 
-		uniqueCon = new HashSet<String>(conList);
+		uniqueCon = new HashSet<String>(conListArray);
 		for (String con : uniqueCon) {
-			System.out.println(con + ": " + Collections.frequency(conList, con));
+			System.out.println(con + ": " + Collections.frequency(conListArray, con));
 		}
 
 		//To iterate through the contact name list and select check box against any specific name
