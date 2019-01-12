@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Features Checks" guice-stage="DEVELOPMENT">
+	<test thread-count="5" name="TestNG Features test" verbose="2">
+		<classes>
+			<class name="testNGBasics.TestNgTest" />
+	<!-- 		<class name="testNGBasics.TestNGFeatures" />
+			<class name="testNGBasics.TestNGBasics" /> -->
+		</classes>
+	</test> <!-- TestNG Features test -->
+</suite> <!-- TestNG Features Checks -->
