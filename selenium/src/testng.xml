@@ -1,11 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Features Checks" guice-stage="DEVELOPMENT">
-	<test thread-count="5" name="TestNG Features test" verbose="2">
+<suite name="TestNG Checks" guice-stage="DEVELOPMENT"
+	verbose="2">
+	<test thread-count="5" name="TestNG test" preserve-order="false">
 		<classes>
 			<class name="testNGBasics.TestNgTest" />
-	<!-- 		<class name="testNGBasics.TestNGFeatures" />
-			<class name="testNGBasics.TestNGBasics" /> -->
+			<class name="testNGBasics.TestNGFeatures" />
+			<class name="testNGBasics.TestNGBasics" />
 		</classes>
-	</test> <!-- TestNG Features test -->
-</suite> <!-- TestNG Features Checks -->
+	</test>
+</suite>
+
+
+<!-- You can specify package names instead of class names:  -->
+<!-- <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1">
+	<test name="Regression1">
+		<packages>
+			<package name="testNGBasics" />
+		</packages>
+	</test>
+</suite> -->
+
+
+
+
+<!-- You can also specify groups and methods to be included and excluded: 
+<test name="Regression1">
+  <groups>
+    <run>
+      <exclude name="brokenTests"  />
+      <include name="checkinTests"  />
+    </run>
+  </groups>
+  
+  <classes>
+    <class name="test.IndividualMethodsTest">
+      <methods>
+        <include name="testMethod" />
+      </methods>
+    </class>
+  </classes>
+</test> -->
+
+
+
+
+
+
+
+
