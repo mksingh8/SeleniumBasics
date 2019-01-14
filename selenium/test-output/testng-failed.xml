@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="userid" value="manish.uit.bu"/>
+  <parameter name="url" value="https://www.google.com"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNGBasics.TestNgTest">
+      <class name="testNGBasics.ParameterInTestNG">
         <methods>
-          <include name="aSuite"/>
-          <include name="bClass"/>
-          <include name="searchTest"/>
-          <include name="aClass"/>
-          <include name="aTest"/>
-          <include name="bTest"/>
-          <include name="bSuite"/>
-          <include name="aMethod"/>
-          <include name="bMehod"/>
+          <include name="openGmail"/>
+          <include name="enterUserID" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- testNGBasics.TestNgTest -->
+      </class> <!-- testNGBasics.ParameterInTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

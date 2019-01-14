@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestNG Checks" guice-stage="DEVELOPMENT"
-	verbose="2">
+<suite name="TestNG Checks" guice-stage="DEVELOPMENT" verbose="2">
 	<test thread-count="5" name="TestNG test" preserve-order="false">
+
+		<parameter name="url" value="https://www.google.com" />
+		<parameter name="browser" value="firefox" />
+		<parameter name="userid" value="manish.uit.bu" />
+
 		<classes>
-			<class name="testNGBasics.TestNgTest" />
+			<class name="testNGBasics.ParameterInTestNG"></class>
+			<!-- <class name="testNGBasics.TestNgTest" />
 			<class name="testNGBasics.TestNGFeatures" />
-			<class name="testNGBasics.TestNGBasics" />
+			<class name="testNGBasics.TestNGBasics" /> -->
 		</classes>
 	</test>
 </suite>

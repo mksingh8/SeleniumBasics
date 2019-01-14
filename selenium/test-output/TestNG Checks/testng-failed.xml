@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [TestNG Checks]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="TestNG test(failed)" verbose="2">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="userid" value="manish.uit.bu"/>
+    <parameter name="url" value="https://www.google.com"/>
+    <classes>
+      <class name="testNGBasics.ParameterInTestNG">
+        <methods>
+          <include name="openGmail"/>
+          <include name="startBrowser"/>
+          <include name="enterUserID"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testNGBasics.ParameterInTestNG -->
+    </classes>
+  </test> <!-- TestNG test(failed) -->
+</suite> <!-- Failed suite [TestNG Checks] -->

@@ -2,79 +2,72 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-01-12T14:28:10Z" name="TestNG Features Checks" finished-at="2019-01-12T14:28:34Z" duration-ms="23757">
+  <suite started-at="2019-01-14T04:23:17Z" name="Default suite" finished-at="2019-01-14T04:23:46Z" duration-ms="29173">
     <groups>
-      <group name="BooleanTest">
-        <method signature="TestNgTest.googleTitleTest()[pri:1, instance:testNGBasics.TestNgTest@5c671d7f]" name="googleTitleTest" class="testNGBasics.TestNgTest"/>
-        <method signature="TestNgTest.searchTest()[pri:2, instance:testNGBasics.TestNgTest@5c671d7f]" name="searchTest" class="testNGBasics.TestNgTest"/>
-      </group> <!-- BooleanTest -->
-      <group name="ClickTest">
-        <method signature="TestNgTest.gMailClick()[pri:3, instance:testNGBasics.TestNgTest@5c671d7f]" name="gMailClick" class="testNGBasics.TestNgTest"/>
-      </group> <!-- ClickTest -->
     </groups>
-    <test started-at="2019-01-12T14:28:10Z" name="TestNG Features test" finished-at="2019-01-12T14:28:34Z" duration-ms="23757">
-      <class name="testNGBasics.TestNgTest">
-        <test-method is-config="true" signature="bSuite()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:10Z" name="bSuite" finished-at="2019-01-12T14:28:10Z" duration-ms="6" status="PASS">
+    <test started-at="2019-01-14T04:23:17Z" name="Default test" finished-at="2019-01-14T04:23:46Z" duration-ms="29173">
+      <class name="testNGBasics.ParameterInTestNG">
+        <test-method signature="openGmail(java.lang.String)[pri:0, instance:testNGBasics.ParameterInTestNG@1f59a598]" started-at="2019-01-14T04:23:17Z" name="openGmail" finished-at="2019-01-14T04:23:25Z" duration-ms="8042" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bSuite -->
-        <test-method is-config="true" signature="bTest()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:10Z" name="bTest" finished-at="2019-01-12T14:28:10Z" duration-ms="1" status="PASS">
+        </test-method> <!-- openGmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGBasics.ParameterInTestNG@1f59a598]" started-at="2019-01-14T04:23:25Z" name="tearDown" finished-at="2019-01-14T04:23:26Z" duration-ms="1198" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bTest -->
-        <test-method is-config="true" signature="bClass()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:10Z" name="bClass" finished-at="2019-01-12T14:28:10Z" duration-ms="1" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method signature="startBrowser(java.lang.String, java.lang.String)[pri:0, instance:testNGBasics.ParameterInTestNG@1f59a598]" started-at="2019-01-14T04:23:26Z" name="startBrowser" finished-at="2019-01-14T04:23:31Z" duration-ms="5258" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bClass -->
-        <test-method is-config="true" signature="bMehod()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:10Z" name="bMehod" finished-at="2019-01-12T14:28:16Z" duration-ms="5782" status="PASS">
+        </test-method> <!-- startBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGBasics.ParameterInTestNG@1f59a598]" started-at="2019-01-14T04:23:31Z" name="tearDown" finished-at="2019-01-14T04:23:33Z" duration-ms="1561" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bMehod -->
-        <test-method signature="googleTitleTest()[pri:1, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:16Z" name="googleTitleTest" finished-at="2019-01-12T14:28:16Z" duration-ms="16" status="PASS">
+        </test-method> <!-- tearDown -->
+        <test-method signature="enterUserID(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testNGBasics.ParameterInTestNG@1f59a598]" started-at="2019-01-14T04:23:33Z" name="enterUserID" finished-at="2019-01-14T04:23:44Z" depends-on-methods="testNGBasics.ParameterInTestNG.openGmail" duration-ms="11729" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.google.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[manish.uit.bu]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- googleTitleTest -->
-        <test-method is-config="true" signature="aMethod()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:16Z" name="aMethod" finished-at="2019-01-12T14:28:17Z" duration-ms="1675" status="PASS">
+        </test-method> <!-- enterUserID -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testNGBasics.ParameterInTestNG@1f59a598]" started-at="2019-01-14T04:23:44Z" name="tearDown" finished-at="2019-01-14T04:23:46Z" duration-ms="1360" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aMethod -->
-        <test-method is-config="true" signature="bMehod()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:17Z" name="bMehod" finished-at="2019-01-12T14:28:23Z" duration-ms="5644" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bMehod -->
-        <test-method signature="searchTest()[pri:2, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:23Z" name="searchTest" finished-at="2019-01-12T14:28:23Z" duration-ms="108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTest -->
-        <test-method is-config="true" signature="aMethod()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:23Z" name="aMethod" finished-at="2019-01-12T14:28:24Z" duration-ms="1394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aMethod -->
-        <test-method is-config="true" signature="bMehod()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:24Z" name="bMehod" finished-at="2019-01-12T14:28:30Z" duration-ms="5350" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bMehod -->
-        <test-method signature="gMailClick()[pri:3, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:30Z" name="gMailClick" finished-at="2019-01-12T14:28:32Z" duration-ms="2713" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- gMailClick -->
-        <test-method is-config="true" signature="aMethod()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:32Z" name="aMethod" finished-at="2019-01-12T14:28:34Z" duration-ms="1048" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aMethod -->
-        <test-method is-config="true" signature="aClass()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:34Z" name="aClass" finished-at="2019-01-12T14:28:34Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aClass -->
-        <test-method is-config="true" signature="aTest()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:34Z" name="aTest" finished-at="2019-01-12T14:28:34Z" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aTest -->
-        <test-method is-config="true" signature="aSuite()[pri:0, instance:testNGBasics.TestNgTest@5c671d7f]" started-at="2019-01-12T14:28:34Z" name="aSuite" finished-at="2019-01-12T14:28:34Z" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- aSuite -->
-      </class> <!-- testNGBasics.TestNgTest -->
-    </test> <!-- TestNG Features test -->
-  </suite> <!-- TestNG Features Checks -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- testNGBasics.ParameterInTestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
