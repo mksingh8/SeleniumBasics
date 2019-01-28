@@ -93,6 +93,7 @@ public class ScrollingConcept {
 				+ "/div/div/div/ul/span/a/strong";
 		WebElement ele = driver.findElement(By.xpath(notRecomdXpath));
 		Actions act = new Actions(driver);
+		act.sendKeys(Keys.PAGE_DOWN);
 		act.moveToElement(ele).build().perform();
 	/*
 	 * o/p:
