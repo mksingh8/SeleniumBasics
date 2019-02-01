@@ -34,6 +34,7 @@ public class DataDrivenConcept {
 		for (int rowNum = 2; rowNum <= count; rowNum++) {
 			String userName = reader.getCellData(sheetName, userNameCol, rowNum);
 			String password = reader.getCellData(sheetName, passCol, rowNum);
+			
 			driver.findElement(By.xpath("//*[@id=\"id01\"]//input[@placeholder='Enter email']")).clear();
 			driver.findElement(By.xpath("//*[@id=\"id01\"]//input[@placeholder='Enter email']")).sendKeys(userName);
 			

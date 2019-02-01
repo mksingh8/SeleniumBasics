@@ -31,7 +31,7 @@ public class TakeScreenshotCOncept {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		FileUtils.copyFile(src, 
 				new File("/home/manish/git/SeleniumBasics/selenium/src/seleniumBasics/"+ driver.getTitle()+".jpeg"));
-		
+
 		driver.quit();
 	}
 
