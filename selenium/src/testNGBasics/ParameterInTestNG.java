@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 public class ParameterInTestNG {
 	WebDriver driver;
 /*	
-	all the parameters value must be passed in test method, otherwise, it will throw Exception. 
+	Parameter values are defined in POM xml. all the parameters value must be passed in test method, otherwise, it will throw Exception. 
 	Parameters should be defined in the same order in both annotations. testNG follow the Parameters sequence 
 	while assigning the value to the test parameters. 
 	These parameters value can only be used in @Test annotation not in @BeforeMethod. 

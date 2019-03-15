@@ -31,6 +31,11 @@ public class FindElementsConcept {
 		// Iterator
 
 		Iterator<WebElement> itr = inputList.iterator();
+		while (itr.hasNext()) {
+			System.out.println(itr.next().getAttribute("text"));
+		}
+		
+		//OR
 		for (int i = 0; i < inputList.size(); i++) {
 			WebElement we = itr.next();
 			System.out.println(we.getAttribute("text"));
